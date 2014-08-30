@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		document.addEventListener("deviceready", onDeviceReady, false);
+
+	    // PhoneGap is ready
+	    //
+	    function onDeviceReady() {
+	        // Empty
+	    }
+
+	    // alert dialog dismissed
+	    function alertDismissed() {
+	        // do something
+	    }
+
+	    // Show a custom alert
+	    //
+	    function showAlert() {
+	        navigator.notification.alert(
+	            'Deneme',  // message
+	            alertDismissed,         // callback
+	            'başlık',            // title
+	            'bitir'                  // buttonName
+	        );
+	    }
+	</script>
+</head>
+<body>
+
+tes
+	 <p><a href="#" onclick="showAlert(); return false;">Bildirim Gönder</a></p>
+</body>
+</html>
